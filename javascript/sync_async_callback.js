@@ -2,4 +2,25 @@
 
 // 1. sync
 
-functin
+function demo(callback){
+
+    console.log("inside an sync function.");
+    callback()
+}
+function test(){
+    console.log("calling the callback function...");
+}
+demo(test)
+
+// 2.async
+
+function demo1(callback_test){
+    setTimeout(()=>{
+        console.log("inside the async function");
+        callback_test()
+    },2000)
+}
+function testing(){
+    console.log("testing the  callback...");
+}
+demo1(testing)
