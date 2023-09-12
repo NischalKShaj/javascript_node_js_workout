@@ -1,0 +1,7 @@
+event loop 
+
+javascript is a syncronous language so when a blocking situation occurs that is when a asyncrounous function comes it is moved to the event loop not in the call stack when the call stack is empty then the event queue will put the asyncrounous function to the call stack
+
+
+session 
+it is the data that is stored in the server side and it depends on the cookies when sending the session id to the user
